@@ -23,6 +23,7 @@ The goals / steps of this project are the following:
 [image5]: ./internet_images/5.jpg
 [image6]: ./internet_images/6.jpg
 [image7]: ./internet_images/7.png
+[image8]: ./internet_images/result.png
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -76,8 +77,6 @@ My final model consisted of the following layers:
 | Fully connected		| input: 120   output: 84        									|
 | RELU					|												|
 | Fully connected		| input: 84   output: 43        									|
-|						|												|
-|						|												|
  
 
 
@@ -108,7 +107,7 @@ Haven't tried any other model yet. By simply normalized grayscale image, the acc
 
 ### Test a Model on New Images
 
-#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 1. Choose seven German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 ![alt text][image1]
@@ -119,38 +118,18 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image6]
 ![alt text][image7]
 
+image 5 is difficult to classify, because when resize the image into 32x32, it was hard to distinguish even with human eye. It looks like "!" sign.
 
-The first image might be difficult to classify because ...
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-Here are the results of the prediction:
+![alt text][image8]
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The images from internet are real life images, so we need to do more preprocessing before the classfication. Even the accuracy rate was high on the test set, it doesn't mean that the algorithm will work well in the real life.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
+See above image
 
 For the second image ... 
 
