@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image3]: ./internet_images/3.jpg
 [image4]: ./internet_images/4.jpg
 [image5]: ./internet_images/5.png
-[image8]: ./internet_images/result.png
+[image8]: ./internet_images/result_5.png
 [image9]: ./internet_images/histogram.png
 
 ---
@@ -88,9 +88,9 @@ I used this parameters because the Lenet lecture provided those. I have tested c
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 99.6
+* training set accuracy of 99.4
 * validation set accuracy of 94.7
-* test set accuracy of 92.4
+* test set accuracy of 91.9
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -115,8 +115,6 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
-![alt text][image6]
-![alt text][image7]
 
 image 5 is difficult to classify, because when resize the image into 32x32, it was hard to distinguish even with human eye. It looks like "!" sign.
 
@@ -125,6 +123,7 @@ image 5 is difficult to classify, because when resize the image into 32x32, it w
 
 ![alt text][image8]
 
+The accuracy rate to predict 5 internet images was 60%. The accuracy rate for testing images were 91.9%.
 The images from internet are real life images, so we need to do more preprocessing before the classfication. Even the accuracy rate was high on the test set, it doesn't mean that the algorithm will work well in the real life.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
