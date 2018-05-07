@@ -128,6 +128,11 @@ The images from internet are real life images, so we need to do more preprocessi
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-See above image
+![alt text][image8]
+Row 1: The model predicted the correct label with 99% probability.
+Row 2: The model predicted the correct label with 77% probability.
+Row 3: The model predicted the incorrect label with 99% probability, the correct label was the second highest probability one with less than 1%. The model couldn't predict the correct one because the resolution of the image was too low, which made "caution" sign and "traffic signal" sign looks really similar.
+Row 4: The model predicted the incorrect label with 99% probability, the correct label was the second highest probability one with less than 1%. "20km/h" and "70km/h" were not that similar, I guess it was because the model was not deep enough. If we have more layers to extract more feature, this prediction error could be eliminated.
+Row 5: The model predicted the correct label with 99% probability.
 
 
