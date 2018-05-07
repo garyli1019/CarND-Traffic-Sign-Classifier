@@ -20,9 +20,7 @@ The goals / steps of this project are the following:
 [image2]: ./internet_images/2.jpg
 [image3]: ./internet_images/3.jpg
 [image4]: ./internet_images/4.jpg
-[image5]: ./internet_images/5.jpg
-[image6]: ./internet_images/6.jpg
-[image7]: ./internet_images/7.png
+[image5]: ./internet_images/5.png
 [image8]: ./internet_images/result.png
 [image9]: ./internet_images/histogram.png
 
