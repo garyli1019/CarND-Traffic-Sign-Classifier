@@ -21,6 +21,7 @@ The goals / steps of this project are the following:
 [image3]: ./internet_images/3.jpg
 [image4]: ./internet_images/4.jpg
 [image5]: ./internet_images/5.png
+[image6]: ./internet_images/sample.png
 [image8]: ./internet_images/result_5.png
 [image9]: ./internet_images/histogram.png
 
@@ -46,7 +47,9 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 ![alt text][image9]
-
+![alt text][image6]
+* There are many possible factors that would affect the accuracy of the model, such as the brightness of images, noise pixels in the images, angle of the view, and obstruct that blocked part of the traffic sign.
+* The resolution of the images are really low. So many feature might be lost in training.
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
